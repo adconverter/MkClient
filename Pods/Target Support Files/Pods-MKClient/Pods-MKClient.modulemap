@@ -1,0 +1,6 @@
+framework module Pods_MKClient {
+  umbrella header "Pods-MKClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

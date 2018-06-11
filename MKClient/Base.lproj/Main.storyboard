@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--StartView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="StartView" id="BYZ-38-t0r" customClass="MainVC" customModule="MKClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOm-AL-zOQ">
+                                <rect key="frame" x="20" y="488" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Восстановить доступ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7dM-v2-tJW">
+                                <rect key="frame" x="20" y="249" width="280" height="184"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Если вы ранее использовали приложение, выполните вход или зарегистрируйтесь, если используете впервые" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNJ-P0-2kb">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDM-xq-ieJ">
+                                        <rect key="frame" x="0.0" y="92" width="280" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Регистрация"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycy-Z6-bNO">
+                                        <rect key="frame" x="0.0" y="148" width="280" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Вход"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ycy-Z6-bNO" firstAttribute="width" secondItem="jNJ-P0-2kb" secondAttribute="width" id="3C5-5E-WXj"/>
+                                    <constraint firstItem="CDM-xq-ieJ" firstAttribute="width" secondItem="jNJ-P0-2kb" secondAttribute="width" id="EM4-nz-CE1"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ez-cu-tVO">
+                                <rect key="frame" x="96" y="84" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="34G-sA-Q7o"/>
+                                    <constraint firstAttribute="height" constant="128" id="vnG-xJ-1p6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7dM-v2-tJW" secondAttribute="trailing" constant="20" id="A82-8z-JPP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qOm-AL-zOQ" secondAttribute="bottom" constant="50" id="Al3-QA-RkV"/>
+                            <constraint firstItem="7dM-v2-tJW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Iuw-uz-gMe"/>
+                            <constraint firstItem="7ez-cu-tVO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="Pbj-I9-Ugx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qOm-AL-zOQ" secondAttribute="trailing" constant="20" id="Qh3-lS-LFF"/>
+                            <constraint firstItem="7ez-cu-tVO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WmR-3H-yXj"/>
+                            <constraint firstItem="7dM-v2-tJW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" id="YlF-cc-OHC"/>
+                            <constraint firstItem="qOm-AL-zOQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qOB-de-mEG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.875" y="32.74647887323944"/>
+        </scene>
+        <!--SignInView-->
+        <scene sceneID="536-CD-tHW">
+            <objects>
+                <viewController title="SignInView" id="3XH-ON-u38" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bfu-HC-9dF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hwf-uS-z2e">
+                                <rect key="frame" x="20" y="276" width="280" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail или номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t5G-4E-rm7">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5eN-MY-by8">
+                                        <rect key="frame" x="0.0" y="50" width="280" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXq-6s-kZA">
+                                        <rect key="frame" x="0.0" y="100" width="116" height="30"/>
+                                        <state key="normal" title="Забыли пароль?">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5eN-MY-by8" firstAttribute="width" secondItem="hwf-uS-z2e" secondAttribute="width" id="mxE-Xo-BhL"/>
+                                    <constraint firstItem="t5G-4E-rm7" firstAttribute="width" secondItem="hwf-uS-z2e" secondAttribute="width" id="rPU-gw-GQA"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RHt-Ii-sfQ">
+                                <rect key="frame" x="96" y="84" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="bII-Q9-urR"/>
+                                    <constraint firstAttribute="height" constant="128" id="wJx-EX-PQY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYe-MR-4N1">
+                                <rect key="frame" x="20" y="488" width="280" height="30"/>
+                                <state key="normal" title="ВХОД"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DYe-MR-4N1" firstAttribute="leading" secondItem="v1l-5M-Ahs" secondAttribute="leading" constant="20" id="6Yk-PP-0u6"/>
+                            <constraint firstItem="RHt-Ii-sfQ" firstAttribute="centerX" secondItem="Bfu-HC-9dF" secondAttribute="centerX" id="9hS-tt-dIF"/>
+                            <constraint firstItem="v1l-5M-Ahs" firstAttribute="bottom" secondItem="DYe-MR-4N1" secondAttribute="bottom" constant="50" id="Ijl-0x-Rbf"/>
+                            <constraint firstItem="hwf-uS-z2e" firstAttribute="centerY" secondItem="Bfu-HC-9dF" secondAttribute="centerY" multiplier="1.2" id="VLE-Eb-QuS"/>
+                            <constraint firstItem="v1l-5M-Ahs" firstAttribute="trailing" secondItem="hwf-uS-z2e" secondAttribute="trailing" constant="20" id="XQw-b5-XfB"/>
+                            <constraint firstItem="v1l-5M-Ahs" firstAttribute="trailing" secondItem="DYe-MR-4N1" secondAttribute="trailing" constant="20" id="etc-aE-0b4"/>
+                            <constraint firstItem="hwf-uS-z2e" firstAttribute="leading" secondItem="v1l-5M-Ahs" secondAttribute="leading" constant="20" id="kVl-Wa-mID"/>
+                            <constraint firstItem="RHt-Ii-sfQ" firstAttribute="top" secondItem="v1l-5M-Ahs" secondAttribute="top" constant="64" id="niy-yg-H0S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v1l-5M-Ahs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sW-f1-KB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676.875" y="-191.19718309859155"/>
+        </scene>
+    </scenes>
+</document>
